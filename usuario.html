@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>La Organizacion</h1>
+    <h2>New Skylines</h2>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <div class="formContainer" id="container1">
+        <div class="Child">
+            <input type="email" placeholder="usuario@ejemplo.com" id="email">
+            <br>
+            <input type="password" placeholder="contraseña" id="password">
+            <br>
+            <button onclick="Registro()" id="Registro">Registrarse</button>
+            <br>
+            <a onclick="cambiar(true)">¿Ya tienes una cuenta? logeate aqui.</a>
+        </div>
+    </div>
+    
+    <div class="formContainer" id="container2">
+        <div class="Child">
+            <input type="email" placeholder="usuario@ejemplo.com" id="emaillogin">
+            <br>
+            <input type="password" placeholder="contraseña" id="passwordlogin">
+            <br>
+            <button onclick="Logeo()" id="Login">Logear</button>
+            <br>
+            <a onclick="cambiar(false)">¿No tienes una cuenta? registrate aqui.</a>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
